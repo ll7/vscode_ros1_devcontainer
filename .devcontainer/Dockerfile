@@ -1,4 +1,5 @@
-FROM althack/ros2:foxy-dev 
+FROM althack/ros:noetic-full 
+# https://www.althack.dev/dockerfiles/ros/
 
 # ** [Optional] Uncomment this section to install additional packages. **
 #

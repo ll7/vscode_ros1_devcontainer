@@ -12,7 +12,10 @@
 		"--cap-add=SYS_PTRACE",
 		"--security-opt=seccomp:unconfined",
 		"--security-opt=apparmor:unconfined",
-		"--volume=/tmp/.X11-unix:/tmp/.X11-unix"
+		"--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw",
+		"--env=DISPLAY",
+		"--env=\"QT_X11_NO_MITSHM=1\""
+		// " --env="QT_X11_NO_MITSHM=1""
 	],
 	"containerEnv": {
 		"DISPLAY": "${localEnv:DISPLAY}",
